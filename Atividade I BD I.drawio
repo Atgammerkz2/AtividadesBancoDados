@@ -1,9 +1,60 @@
-<mxfile host="app.diagrams.net" modified="2024-02-16T22:34:58.104Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="Sv_xMrCgVz9VOezGP--n" version="23.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-16T23:08:15.950Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="RkXScaFzzNnubvr6zk3x" version="23.1.5" type="github">
   <diagram name="Página-1" id="4ojqG_ugSGC-FD4W4Zqo">
-    <mxGraphModel dx="1114" dy="566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2138" dy="666" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="BBwxfIjkDkX_LPROG-IG-15" value="Colaborador" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-90" y="460" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="BBwxfIjkDkX_LPROG-IG-16" value="+&lt;u&gt;cod_identificacao&lt;/u&gt;&lt;br&gt;+&lt;u&gt;pis&lt;/u&gt;&lt;br&gt;+&lt;u&gt;cpf&lt;/u&gt;&lt;br&gt;+primeiro_nome&lt;br&gt;+sobrenome&lt;br&gt;+departamento&lt;br&gt;+cargo" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="BBwxfIjkDkX_LPROG-IG-15">
+          <mxGeometry y="50" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="BBwxfIjkDkX_LPROG-IG-17" value="Cliente" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-90" y="328" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="BBwxfIjkDkX_LPROG-IG-18" value="+&lt;u&gt;codigo&lt;/u&gt;&lt;br&gt;+nome" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="BBwxfIjkDkX_LPROG-IG-17">
+          <mxGeometry y="50" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BBwxfIjkDkX_LPROG-IG-20" value="Ordem_Servico" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="320" width="160" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="BBwxfIjkDkX_LPROG-IG-21" value="+&lt;u&gt;num_ordem&lt;/u&gt;&lt;br&gt;+&lt;u&gt;cod_cliente&lt;/u&gt;&lt;br&gt;+data_hora&lt;div&gt;+&lt;u&gt;cod_colaborador&lt;/u&gt;&lt;/div&gt;&lt;div&gt;+&lt;u&gt;cod&lt;/u&gt;&lt;u&gt;_tipo_servico&lt;/u&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="BBwxfIjkDkX_LPROG-IG-20">
+          <mxGeometry y="50" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="BBwxfIjkDkX_LPROG-IG-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.002;entryY=0.315;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BBwxfIjkDkX_LPROG-IG-22" target="BBwxfIjkDkX_LPROG-IG-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BBwxfIjkDkX_LPROG-IG-22" value="Contrata Serviço" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="130" y="368" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BBwxfIjkDkX_LPROG-IG-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BBwxfIjkDkX_LPROG-IG-18" target="BBwxfIjkDkX_LPROG-IG-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BBwxfIjkDkX_LPROG-IG-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.644;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BBwxfIjkDkX_LPROG-IG-26" target="BBwxfIjkDkX_LPROG-IG-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BBwxfIjkDkX_LPROG-IG-26" value="Executa" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="110" y="520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BBwxfIjkDkX_LPROG-IG-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BBwxfIjkDkX_LPROG-IG-16" target="BBwxfIjkDkX_LPROG-IG-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BBwxfIjkDkX_LPROG-IG-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BBwxfIjkDkX_LPROG-IG-31" target="BBwxfIjkDkX_LPROG-IG-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BBwxfIjkDkX_LPROG-IG-31" value="Tipo_Servico" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="348" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BBwxfIjkDkX_LPROG-IG-32" value="+&lt;u&gt;cod_tipo&lt;/u&gt;&lt;br&gt;+tipo_servico" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="BBwxfIjkDkX_LPROG-IG-31">
+          <mxGeometry y="50" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BBwxfIjkDkX_LPROG-IG-33" value="Tipo demanda" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="530" y="368" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BBwxfIjkDkX_LPROG-IG-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.018;entryY=0.833;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BBwxfIjkDkX_LPROG-IG-33" target="BBwxfIjkDkX_LPROG-IG-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
